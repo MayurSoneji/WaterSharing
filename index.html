@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sharing Is Caring</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script type="text/JavaScript" src="js/script.js"></script>
+    <script type="text/JavaScript" src="js/jquery.min.js"></script>
+    <script type="text/JavaScript" src="js/html5shiv.js"></script>
+    <link rel="javascript" href="js/donation.js">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+  <script>
+        $(function() {
+          $.scrollify({
+            section : ".full",
+          });
+        });
+  </script>
+
+  </head>
+  <body>
+  
+  	<section class="full" id="gradient">
+  		<h1>No Matter Who You Are...</h1>
+  		<div id="scrolldown">
+        <div class="mouse">
+          <span><p>↓</p></span>
+        </div>
+      </div>
+  	</section>
+
+  	<section class="full" id="baby">
+  		<h2 class="head">Who do you care about?</h2>
+      <br />
+      <br />
+      <br />
+      <div class="scrolling-words">
+        <p id="scroll">Son?</p>
+        <p id="scroll">Daughter?</p>
+        <p id="scroll">Father?</p>
+        <p id="scroll">Mother?</p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <h3>DID YOU KNOW?!</h3>
+      <p class="text">From 1930’s, water consumption has risen by <strong>1% EACH YEAR...</strong></p>
+      <br />
+      <p class="text">Some parts of the world cannot get clean, safe water? What if that were you, or that someone you care about?</p>
+      <p class="text">At the rate we are going the clean, safe water may not be here for our family, friends and even yourself.</p>
+  	</section>
+
+  	<section class="full" id="green">
+  		<h2 class="head">What Can I Do?</h2>
+      <br />
+  		<h3 id="title-green">GO GREEN!</h3>
+  		<h4 id="waste">I'm not saying cut down,<br />I'm saying stop wasting!</h4>
+      <br />
+      <br />
+      <h6>Stopping Waste Waste:</h6>
+      <br />
+      <div class="left">
+        <p>Keeping the tap off while brushing your teeth.</p>
+        <br />
+        <p>Don’t use your toilet as a dustbin.</p>
+        <br />
+        <p>Use the left over water from your night time drinks to water houseplants.</p>
+      </div>
+      <div class="right">
+        <p>Invest in a water butt and connect it to your drainpipe in your garden.</p>
+        <br />
+        <p>Install a cistern displacement device in your toilet.</p>
+      </div>
+  	</section>
+
+  	<section class="full" id="blue">
+  		<h2 class="head">How else can I help?</h2>
+      <br />
+      <br />
+  		<h5>#HelpingHand</h5>
+      <br />
+      <br />
+      <div id="donate">
+    		<h6 id="no-space">There are many ways of helping</h6>
+        <br />
+    		<p id="list-ben">Share this link!<br />
+    		Your brilliant idea!<br />
+    		Do further research!<br />
+    		Donate so we can help those without water!</p>
+        <br />
+        <!--<input name="amount" type="number" class="feedback-input-amount" placeholder="$100" /> -->
+        <button id="donate-btn">Donate</button>
+      </div>
+      <div id="contact-right">
+  		  <h6 id="no-space">I'll Share!</h6>
+        <br />
+        <form>      
+          <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+          <input name="email" type="text" class="feedback-input" placeholder="Email" />
+          <input type="submit" value="SUBMIT"/>
+        </form>
+      </div>
+  	</section>
+
+  </body>
+
+    <script src="js/jquery.min.js"></script>
+  <script src="js/html5shiv.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/script.js"></script>
+
+  <script>
+  Webflow.push(function () {
+    var fulls = $('.full');
+    var win = $(window);
+    Webflow.resize.on(function () {
+      fulls.height(win.height());
+    });
+  });
+</script>
+
+</html>
